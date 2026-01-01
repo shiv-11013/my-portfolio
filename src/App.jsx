@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import MainPortfolio from "./pages/MainPortfolio";
-import ProjectsPortfolio from "./pages/projectsPortfolio";
+import ProjectsPortfolio from "./pages/ProjectsPortfolio";
 import TechStack from "./pages/TechStack";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
