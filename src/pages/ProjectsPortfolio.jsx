@@ -5,7 +5,7 @@ function ProjectsPortfolio() {
       img: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
       desc: "A full-stack e-commerce platform with 8+ product categories, user authentication, admin dashboard, wishlist & cart management, and advanced filtering system.",
       tech: ["React", "Node.js", "MongoDB", "Express", "Bootstrap"],
-      url: "https://myshopingsite-backend.onrender.com",
+      url: "https://my-shoping-site-front-end-2oah-h2it0tdw7.vercel.app",
     },
     {
       title: "Anvaya CRM",
