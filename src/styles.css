@@ -86,7 +86,7 @@
   color: #cfcccc;
   padding: 4px 25px;
   border: 2px solid #afbbb6;
-  border-radius: 5px;
+  border-radius: 5px 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
