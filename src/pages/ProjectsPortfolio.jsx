@@ -5,14 +5,14 @@ function ProjectsPortfolio() {
       img: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
       desc: "A full-stack e-commerce platform with 8+ product categories, user authentication, admin dashboard, wishlist & cart management, and advanced filtering system.",
       tech: ["React", "Node.js", "MongoDB", "Express", "Bootstrap"],
-      url: "https://my-shoping-site-front-end-2oah-h2it0tdw7.vercel.app",
+      url: "https://my-shoping-site-front-end-2oah.vercel.app/",
     },
     {
       title: "Anvaya CRM",
       img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
       desc: "A full-stack lead management system with real-time updates, interactive data visualization, and collaborative commenting. Built to help sales teams track leads from initial contact to deal closure.",
       tech: ["React.js", "Node.js", "Express", "MongoDB", "Chart.js"],
-      url: "https://anvaya-frontend-git-main-shivs-projects-5cdfdbed.vercel.app/",
+      url: "https://anvaya-frontend-zeta.vercel.app/",
     },
     // {
     //   title: "Mitra",
