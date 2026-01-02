@@ -6,8 +6,8 @@ function Contact() {
     {
       type: "Email",
       icon: <FiMail />,
-      detail: "example@example.com",
-      action: "Email us",
+      detail: "shivkumar121112@gmail.com",
+      action: "shivkumar121112@gmail.com",
     },
     {
       type: "GitHub",
