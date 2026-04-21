@@ -1,6 +1,6 @@
-import React from "react";
 
-const ScrollToButton = () => {
+
+function ScrollToButton() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -9,11 +9,14 @@ const ScrollToButton = () => {
   };
 
   return (
-    <button className="button-to-top" onClick={scrollToTop}>
-      {" "}
-      ↑ Top
+    <button
+      className="button-to-top"
+      onClick={scrollToTop}
+      aria-label="scroll to top"
+    >
+      ↑
     </button>
   );
-};
+}
 
 export default ScrollToButton;
