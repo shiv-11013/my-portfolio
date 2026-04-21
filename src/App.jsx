@@ -1,5 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Navbar from "./components/Navbar";
 import MainPortfolio from "./pages/MainPortfolio";
 import ProjectsPortfolio from "./pages/ProjectsPortfolio";
@@ -10,15 +8,18 @@ import ScrollToButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
+
       <MainPortfolio />
       <ProjectsPortfolio />
       <TechStack />
       <Contact />
+
       <Footer />
       <ScrollToButton />
-    </BrowserRouter>
+    </>
   );
 }
+
 export default App;

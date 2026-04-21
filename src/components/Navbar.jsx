@@ -1,25 +1,55 @@
-import Navbar from "./components/Navbar";
-import MainPortfolio from "./pages/MainPortfolio";
-import ProjectsPortfolio from "./pages/ProjectsPortfolio";
-import TechStack from "./pages/TechStack";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
-import ScrollToButton from "./components/ScrollToTopButton";
 
-function App() {
+
+import { Link as ScrollLink } from "react-scroll";
+
+function Navbar() {
   return (
-    <>
-      <Navbar />
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div className="container-fluid">
 
-      <MainPortfolio />
-      <ProjectsPortfolio />
-      <TechStack />
-      <Contact />
+        <span className="navbar-brand">{"<>"} Portfolio</span>
 
-      <Footer />
-      <ScrollToButton />
-    </>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+
+            <li className="nav-item">
+              <ScrollLink className="nav-link" to="front-portfolio" smooth={true}>
+                Home
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink className="nav-link" to="projects" smooth={true}>
+                Projects
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink className="nav-link" to="techStack" smooth={true}>
+                Tech
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink className="nav-link" to="contact" smooth={true}>
+                Contact
+              </ScrollLink>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
-export default App;
+export default Navbar;
