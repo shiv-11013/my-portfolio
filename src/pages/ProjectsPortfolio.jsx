@@ -1,21 +1,25 @@
+// demo aur code alag kiye
+
 function ProjectsPortfolio() {
   const projects = [
     {
       title: "MyShoppingSite",
       img: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      desc: "E-commerce platform with auth, cart, filters",
+      desc: "E-commerce platform with auth, cart and filters",
       tech: ["React", "Node", "MongoDB"],
       live: "https://my-shoping-site-front-end-2oah.vercel.app/",
-      github: "https://github.com/your-repo",
+      github: "https://github.com/YOUR_USERNAME/YOUR_REPO",
     },
   ];
 
   return (
-    <section id="projects" className="section">
+    <section id="projects">
       <h1>Projects</h1>
+
       <div className="card-container">
         {projects.map((project, index) => (
           <div className="card" key={index}>
+
             <img src={project.img} alt="project" />
 
             <div className="card-body">
@@ -28,14 +32,16 @@ function ProjectsPortfolio() {
                 ))}
               </div>
 
-              <div>
-                <a href={project.live} target="_blank">
+              <div className="card-actions">
+                <a href={project.live} target="_blank" rel="noreferrer">
                   Live
                 </a>
-                <a href={project.github} target="_blank">
+
+                <a href={project.github} target="_blank" rel="noreferrer">
                   Code
                 </a>
               </div>
+
             </div>
           </div>
         ))}
