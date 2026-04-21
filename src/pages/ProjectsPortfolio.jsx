@@ -1,48 +1,31 @@
-// demo aur code alag kiye
+// structure same, styling CSS se control
 
 function ProjectsPortfolio() {
   const projects = [
     {
       title: "MyShoppingSite",
-      img: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
-      desc: "E-commerce platform with auth, cart and filters",
-      tech: ["React", "Node", "MongoDB"],
-      live: "https://my-shoping-site-front-end-2oah.vercel.app/",
-      github: "https://github.com/YOUR_USERNAME/YOUR_REPO",
+      desc: "E-commerce with auth and cart",
+      live: "#",
+      github: "#",
     },
   ];
 
   return (
-    <section id="projects">
-      <h1>Projects</h1>
+    <section className="projects" id="projects">
+      <h1 className="section-title">Projects</h1>
 
       <div className="card-container">
-        {projects.map((project, index) => (
-          <div className="card" key={index}>
+        {projects.map((p, i) => (
+          <div className="project-card" key={i}>
 
-            <img src={project.img} alt="project" />
+            <h3 className="card-title">{p.title}</h3>
+            <p className="card-desc">{p.desc}</p>
 
-            <div className="card-body">
-              <h3>{project.title}</h3>
-              <p>{project.desc}</p>
-
-              <div>
-                {project.tech.map((t, i) => (
-                  <span key={i}>{t}</span>
-                ))}
-              </div>
-
-              <div className="card-actions">
-                <a href={project.live} target="_blank" rel="noreferrer">
-                  Live
-                </a>
-
-                <a href={project.github} target="_blank" rel="noreferrer">
-                  Code
-                </a>
-              </div>
-
+            <div className="card-buttons">
+              <a href={p.live}>Live</a>
+              <a href={p.github}>Code</a>
             </div>
+
           </div>
         ))}
       </div>
