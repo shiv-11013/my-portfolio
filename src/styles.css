@@ -246,6 +246,7 @@ body {
 .card-buttons {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 0;
 }
@@ -268,12 +269,15 @@ body {
 
 .card-buttons a:first-child:hover { background: #ffffff; }
 
-.card-buttons a:last-child {
+.card-buttons a:not(:first-child) {
   border: 1px solid var(--border);
   color: var(--muted);
 }
 
-.card-buttons a:last-child:hover { border-color: var(--border-h); color: var(--text); }
+.card-buttons a:not(:first-child):hover {
+  border-color: var(--border-h);
+  color: var(--text);
+}
 
 /* ── TECH STACK ── */
 .projects-portfolio {
