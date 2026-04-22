@@ -32,7 +32,7 @@ function ProjectsPortfolio() {
       title: "MyShoppingSite",
       desc: "E-commerce platform with authentication, cart management, and product browsing.",
       tags: ["React", "Node.js", "MongoDB"],
-      live: "#",
+      live: "https://my-shopping-site-front-end-2oah.vercel.app/",
       frontend: "https://github.com/shiv-11013/myShoppingSite-FrontEnd",
       backend: "https://github.com/shiv-11013/myShoppingSite-BackEnd",
     },
