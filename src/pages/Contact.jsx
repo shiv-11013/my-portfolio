@@ -8,8 +8,8 @@ function Contact() {
       </p>
 
       <div className="contact-links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://github.com/shiv-11013">GitHub</a>
+        <a href="https://www.linkedin.com/in/shiv-kumar-19a3263a4/">LinkedIn</a>
       </div>
     </section>
   );
