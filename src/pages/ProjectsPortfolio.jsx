@@ -5,8 +5,8 @@ function ProjectsPortfolio() {
       title: "Kaviox",
       desc: "Scalable backend for an image management platform with Google OAuth login, JWT-based authentication, album ownership & sharing system, secure image access middleware, ImageKit integration, and features like tagging, favorites, and comments.",
       tags: ["Node.js", "Express", "MongoDB", "JWT", "Passport.js", "ImageKit"],
-      live: "https://kaviospx.onrender.com",
-      frontend: null,
+      live: "https://kavios-px-frontend-kcsg.vercel.app/",
+      frontend: "https://github.com/shiv-11013/kaviosPX-Frontend",
       backend: "https://github.com/shiv-11013/kaviosPx",
     },
     {
@@ -22,7 +22,14 @@ function ProjectsPortfolio() {
       num: "03",
       title: "Anvaya CRM",
       desc: "Full-stack CRM system with lead lifecycle management, agent assignment, advanced filtering via query parameters, and analytics dashboard. Features include CRUD operations, real-time form validation, centralized state management using Context API, and data visualization using charts for business insights.",
-      tags: ["React", "Node.js", "Express", "MongoDB", "Context API", "Chart.js"],
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Context API",
+        "Chart.js",
+      ],
       live: "https://anvaya-frontend-zeta.vercel.app/",
       frontend: "https://github.com/shiv-11013/anvaya-frontend",
       backend: "https://github.com/shiv-11013/anvaya-backend",
@@ -52,7 +59,9 @@ function ProjectsPortfolio() {
 
             <div className="card-tags">
               {p.tags.map((t, j) => (
-                <span className="tag" key={j}>{t}</span>
+                <span className="tag" key={j}>
+                  {t}
+                </span>
               ))}
             </div>
 
@@ -72,13 +81,13 @@ function ProjectsPortfolio() {
                   Backend
                 </a>
               )}
-              {!p.live || p.live === "#" && !p.frontend && !p.backend && (
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Code
-                </a>
-              )}
+              {!p.live ||
+                (p.live === "#" && !p.frontend && !p.backend && (
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Code
+                  </a>
+                ))}
             </div>
-
           </div>
         ))}
       </div>
